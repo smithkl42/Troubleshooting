@@ -107,7 +107,7 @@ IF !ERRORLEVEL! NEQ 0 (
 
 :: 3. Running tests
 echo Running tests
-vstest.console.exe "%DEPLOYMENT_SOURCE%\Payboard.Common.Tests\bin\NoDatabase\Payboard.Common.Tests.dll"
+vstest.console.exe "%DEPLOYMENT_SOURCE%\Payboard.Common.Tests\bin\Release\Payboard.Common.Tests.dll"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :StartSync
